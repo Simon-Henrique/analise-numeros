@@ -1,18 +1,18 @@
-var txtn1 = document.getElementById('txtn') // informação preenchida 
-var list = document.getElementById('list') //lista
-var res = document.getElementById('res') // resultado
+var txtn1 = document.getElementById('txtn') 
+var list = document.getElementById('list') 
+var res = document.getElementById('res') 
 var Valor = [] // vetor
 function isnumber(n){
     if(Number(n) >= 1 && Number(n) <= 100){
         return true                               
-    } else {                                     //observe que neste formato, retornamos uma validação verdadeira ou falsa
+    } else {                                     
         return false
     }
 }
-function inlista(n, l){  // a chamada considera dois parametros, poriso na elaboração da função também podemos 'criar' dois elementos de parametro
-    if(l.indexOf(Number(n)) != -1) { //verificando se ja existe o dado numerico da txtn1 dentro do vetor n1, lembrando que retorno == -1 significa que indexOf não encontrou o dado procurado.
+function inlista(n, l){  
+    if(l.indexOf(Number(n)) != -1) { 
         return true
-    } else {           //validação verificando se o dado numérico já esta dentro do vetor
+    } else {           
         return false
     }   
 }
